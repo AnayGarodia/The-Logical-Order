@@ -1,17 +1,5 @@
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 nav main {
     z-index: 200;
-    opacity: 0;
-    animation: fade 0.25s 3.0s;
-    animation-fill-mode: forwards;
 }
 
 .appear {
@@ -51,23 +39,23 @@ nav main {
     width: 15%;
     transform: translateX(-580%) translateY(15%);
     border-radius: 16px;
-    background: linear-gradient(to right, #ff0000 0%, purple 100%);
+    background: linear-gradient(to right, #8E2DE2 0%, #4A00E0 100%);
     transition: 0.5s ease-in-out;
 }
 
 .nav-link:nth-of-type(2):hover~.hover {
-    transform: translateX(-450%) translateY(15%) scaleX(1.2);
-    border-radius: 18px;
+    transform: translateX(-450%) translateY(15%);
+    border-radius: 16px;
 }
 
 .nav-link:nth-of-type(3):hover~.hover {
-    transform: translateX(-310%) translateY(15%) scaleX(1.3);
-    border-radius: 20px;
+    transform: translateX(-315%) translateY(15%) scaleX(1.2);
+    border-radius: 18px;
 }
 
 .nav-link:nth-of-type(4):hover~.hover {
-    transform: translateX(-150%) translateY(15%) scaleX(1.5);
-    border-radius: 20px;
+    transform: translateX(-160%) translateY(15%) scale(1.4, 1.1);
+    border-radius: 18px;
 }
 
 .menu-btn {
