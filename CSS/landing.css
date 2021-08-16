@@ -313,3 +313,13 @@ footer {
         margin: 5%;
     }
 }
+
+.no-link {
+    text-decoration: none;
+    color: white;
+}
+
+.no-link:hover {
+    text-decoration: none;
+    color: white;
+}
