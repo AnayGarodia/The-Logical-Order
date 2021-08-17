@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: none;
+}
+
+.hover {
+  transform: translateX(-455%) translateY(15%) !important;
+}
+
+.nav-link:nth-of-type(1):hover ~ .hover {
+  transform: translateX(-580%) translateY(15%) !important;
+  border-radius: 16px;
+}
+
+.nav-link:nth-of-type(3):hover ~ .hover {
+  transform: translateX(-315%) translateY(15%) !important;
+  border-radius: 18px;
+}
+
+.nav-link:nth-of-type(4):hover ~ .hover {
+  transform: translateX(-160%) translateY(15%) scale(1.2, 1.1) !important;
+  border-radius: 18px;
+}
+
+.catchphrase {
+  text-align: center;
+  margin-top: 10%;
+  font-family: "Poppins";
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.catchphrase-text {
+  font: 500 22px "Atkinson Hyperlegible";
+  margin: 2% 20%;
+  text-align: center;
+}
+
+#dropContainer {
+  max-width: 750px;
+  height: 300px;
+  padding: 25px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font: 32px "Montserrat";
+  cursor: pointer;
+  color: #ccc;
+  border: 4px dashed black;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#dropContainerFile {
+  border-style: solid;
+}
+
+.input {
+  display: none;
+}
