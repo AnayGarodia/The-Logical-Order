@@ -90,3 +90,9 @@
         height: 400px;
     }
 }
+
+@media (max-width: 1250px) {
+    .nav-link:nth-of-type(4):hover~.hover {
+        transform: translateX(-145%) translateY(15%) scale(1.75, 1.1);
+    }
+}
