@@ -1,7 +1,11 @@
 from django.shortcuts import render, redirect
 from .forms import UploadFileForm
 from django.shortcuts import render
+<<<<<<< HEAD
 # import tensorflow as tf
+=======
+#import tensorflow as tf
+>>>>>>> 42d6b7b7da0c24e210eceac0355fdabefcdf62bf
 import smtplib
 import ssl
 from django.shortcuts import render

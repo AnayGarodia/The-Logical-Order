@@ -58,7 +58,11 @@ ROOT_URLCONF = 'Relativity.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': ["/Users/deveshkedia/Desktop/Projects/AIIJC/WEB/The-Logical-Order/src/template"],
+=======
+        'DIRS': ["./src/template"],
+>>>>>>> 42d6b7b7da0c24e210eceac0355fdabefcdf62bf
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
