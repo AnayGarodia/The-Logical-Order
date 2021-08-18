@@ -57,3 +57,60 @@ textarea {
         padding-right: 0%;
     }
 }
+
+@media (max-width: 750px) {
+    .form {
+        margin-top: 35px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .contact {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 650px) {
+    .form {
+        margin-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contact {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 525px) {
+    .form {
+        margin-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .contact {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+    }
+    form h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .form {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .contact {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+    form h3 {
+        font-size: 34px;
+    }
+}
