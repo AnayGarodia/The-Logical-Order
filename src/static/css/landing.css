@@ -17,11 +17,11 @@
 nav main {
     z-index: 200;
     opacity: 0;
-    animation: fade 0.25s 3.0s;
+    animation: fade 0.25s 3s;
     animation-fill-mode: forwards;
 }
 
- ::selection {
+::selection {
     background-color: #444;
     color: white;
 }
@@ -68,20 +68,20 @@ nav main {
 .catchphrase {
     text-align: center;
     margin-top: 10%;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     letter-spacing: 1.2px;
     font-weight: 700;
     font-size: 50px;
 }
 
 .catchphrase-text {
-    font: 500 22px 'Atkinson Hyperlegible';
+    font: 500 22px "Atkinson Hyperlegible";
     margin: 2% 20%;
     text-align: center;
 }
 
 .introductory-btn {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     padding: 1em 2em !important;
     font-size: 15px !important;
     text-transform: uppercase !important;
@@ -176,12 +176,12 @@ nav main {
 }
 
 .box-title {
-    font: 16px 700 'Montserrat';
+    font: 16px 700 "Montserrat";
     text-align: center;
 }
 
 .box-desc {
-    font: 14px 'Poppins';
+    font: 14px "Poppins";
 }
 
 .image:nth-of-type(1) {
@@ -199,7 +199,7 @@ footer {
 .footer-name {
     letter-spacing: 1.5px;
     font-size: 20px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 }
 
 .end-section {
@@ -226,11 +226,19 @@ footer {
 
 .red {
     display: inline !important;
+    color: red !important;
+    text-decoration: underline;
+    display: inline !important;
     color: red;
 }
 
 a.btn {
     text-decoration: none !important;
+    color: white !important;
+}
+
+a.nav-link.red:hover {
+    text-decoration: underline !important;
     color: white !important;
 }
 
@@ -335,6 +343,15 @@ a.btn {
 }
 
 @media (max-width: 350px) {
+    .intro-text {
+        left: 32%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .nav-link:nth-of-type(4):hover~.hover {
+        transform: translateX(-145%) translateY(15%) scale(1.75, 1.1);
+    }
     .intro-text {
         left: 32%;
     }

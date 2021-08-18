@@ -1,3 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+.hover {
+    transform: translateX(-160%) translateY(15%) scale(1.2, 1.1) !important;
+    border-radius: 18px;
+}
+
+.nav-link:nth-of-type(1):hover~.hover {
+    transform: translateX(-580%) translateY(15%) !important;
+    border-radius: 16px;
+}
+
+.nav-link:nth-of-type(2):hover~.hover {
+    transform: translateX(-455%) translateY(15%) !important;
+}
+
+.nav-link:nth-of-type(3):hover~.hover {
+    transform: translateX(-315%) translateY(15%) !important;
+    border-radius: 18px;
+}
+
 .form {
     margin-top: 50px;
     display: flex;
@@ -55,5 +81,68 @@ textarea {
     .contact {
         padding-left: 0%;
         padding-right: 0%;
+    }
+}
+
+@media (max-width: 750px) {
+    .form {
+        margin-top: 35px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .contact {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 650px) {
+    .form {
+        margin-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .contact {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 525px) {
+    .form {
+        margin-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .contact {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+    }
+    form h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .form {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .contact {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+    form h3 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .nav-link:nth-of-type(4):hover~.hover {
+        transform: translateX(-145%) translateY(15%) scale(1.75, 1.1);
     }
 }
