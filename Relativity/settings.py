@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Relativity.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/Users/deveshkedia/Desktop/Projects/AIIJC/WEB/Relativity/Relativity/src/template"],
+        'DIRS': ["./src/template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -229,6 +229,11 @@ footer {
     color: red;
 }
 
+a.btn {
+    text-decoration: none !important;
+    color: white !important;
+}
+
 @media (max-width: 1200px) {
     .box {
         width: 80%;
@@ -299,7 +304,7 @@ footer {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
     .ai-img {
         height: 150px;
         width: 250px;
@@ -311,5 +316,26 @@ footer {
     }
     .footer {
         margin: 5%;
+    }
+    .intro-text {
+        left: 45%;
+    }
+}
+
+@media (max-width: 425px) {
+    .intro-text {
+        left: 40%;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro-text {
+        left: 35%;
+    }
+}
+
+@media (max-width: 350px) {
+    .intro-text {
+        left: 32%;
     }
 }
