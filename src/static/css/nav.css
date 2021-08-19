@@ -43,18 +43,17 @@ nav main {
     transition: 0.5s ease-in-out;
 }
 
-.nav-link:nth-of-type(2):hover~.hover {
-    transform: translateX(-450%) translateY(15%);
-    border-radius: 16px;
-}
-
 .nav-link:nth-of-type(3):hover~.hover {
-    transform: translateX(-315%) translateY(15%) scaleX(1.2);
+    transform: translateX(-315%) translateY(15%) !important;
     border-radius: 18px;
 }
 
+.nav-link:nth-of-type(2):hover~.hover {
+    transform: translateX(-455%) translateY(15%) !important;
+}
+
 .nav-link:nth-of-type(4):hover~.hover {
-    transform: translateX(-160%) translateY(15%) scale(1.4, 1.1);
+    transform: translateX(-160%) translateY(15%) scale(1.2, 1.1) !important;
     border-radius: 18px;
 }
 

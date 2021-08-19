@@ -237,11 +237,6 @@ a.btn {
     color: white !important;
 }
 
-a.nav-link.red:hover {
-    text-decoration: underline !important;
-    color: white !important;
-}
-
 @media (max-width: 1200px) {
     .box {
         width: 80%;
@@ -349,9 +344,6 @@ a.nav-link.red:hover {
 }
 
 @media (max-width: 1250px) {
-    .nav-link:nth-of-type(4):hover~.hover {
-        transform: translateX(-145%) translateY(15%) scale(1.75, 1.1);
-    }
     .intro-text {
         left: 32%;
     }
