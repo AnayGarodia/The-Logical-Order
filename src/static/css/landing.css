@@ -17,7 +17,7 @@
 nav main {
     z-index: 200;
     opacity: 0;
-    animation: fade 0.25s 3s;
+    animation: fade 0.25s 3.25s;
     animation-fill-mode: forwards;
 }
 
@@ -27,6 +27,9 @@ nav main {
 }
 
 .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,10 +41,6 @@ nav main {
 }
 
 .intro-text {
-    top: 40%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
     color: white;
 }
 
@@ -220,10 +219,6 @@ footer {
     margin-bottom: 5%;
 }
 
-.flex-center {
-    justify-content: center;
-}
-
 .red {
     display: inline !important;
     color: red !important;
@@ -268,6 +263,9 @@ a.btn {
     .box {
         width: 92.5%;
     }
+    .end-section {
+        margin-top: -5%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -305,6 +303,9 @@ a.btn {
         margin: 2% 6%;
         font-size: 18px;
     }
+    .end-section {
+        margin-top: 2.5%;
+    }
 }
 
 @media (max-width: 470px) {
@@ -320,31 +321,7 @@ a.btn {
     .footer {
         margin: 5%;
     }
-    .intro-text {
-        left: 45%;
-    }
-}
-
-@media (max-width: 425px) {
-    .intro-text {
-        left: 40%;
-    }
-}
-
-@media (max-width: 375px) {
-    .intro-text {
-        left: 35%;
-    }
-}
-
-@media (max-width: 350px) {
-    .intro-text {
-        left: 32%;
-    }
-}
-
-@media (max-width: 1250px) {
-    .intro-text {
-        left: 32%;
+    .end-section {
+        margin-top: 12.5%;
     }
 }
