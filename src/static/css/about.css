@@ -54,22 +54,37 @@
 }
 
 .box {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 80%;
-    max-width: 425px;
-    max-height: 450px;
-    margin: 5% auto;
-    padding: 3% 5%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 25px auto;
+    padding: 50px auto;
     background-color: black;
-    border-radius: 24px;
+    border-radius: 20px;
+    padding-bottom: 50px;
 }
 
 img {
-    height: 40% !important;
-    width: 80% !important;
-    margin-left: auto;
-    margin-right: auto;
+    height: 200px !important;
+    width: 220px !important;
+    margin: 35px auto;
+    border-radius: 20px;
+}
+
+.name {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Atkinson Hyperlegible';
+}
+
+.about {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin: 0 20px;
 }
