@@ -4,6 +4,8 @@ from django.shortcuts import render
 #import tensorflow as tf
 import smtplib
 import ssl
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 import numpy as np
@@ -68,24 +70,42 @@ def sendFeedback(request):
         name = request.POST['name']
         email = request.POST['email']
         review = request.POST['review']
-        sender_email = "kediadevesh123@gmail.com"  # Enter your address
-        receiver_email = "kediadevesh123@gmail.com"  # Enter receiver address
-        print(name, email, review)
+        sender_email = "kediadevesh123@gmail.com"
+        receiver_email = "kediadevesh123@gmail.com"
+        password = "Dkedia@3349"
+
         message = MIMEMultipart("alternative")
-        message["Subject"] = "FEEDBACK COMING IN!!!!"
+        message["Subject"] = "HEY FEEDBACK COMMING IN!!!"
         message["From"] = email
         message["To"] = receiver_email
-        port = 465
-        smtp_server = "smtp.gmail.com"
-        password = "Dkedia@3349"
+
+        # Create the plain-text and HTML version of your message
         text = f"""\
-            NAME:- {name}
-            FEEDBACK :- {review}
+            FEEDBACK 
+            FROM :- 
+                NAME - {name}
+                FEEDBACK - {review}
+                EMAIL- {email}
+        """
+        html = f"""\
+        <html>
+        <body>
+            <h3>FEEDBACK</h1>
+                <h3>FROM :- </h3>
+                   <h3> NAME - {name}</h3>
+                   <h3> FEEDBACK - {review}</h3>
+                   <h3> EMAIL- {email}</h3>
+        </body>
+        </html>
         """
         part1 = MIMEText(text, "plain")
+        part2 = MIMEText(html, "html")
         message.attach(part1)
+        message.attach(part2)
         context = ssl.create_default_context()
-        with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
             server.login(sender_email, password)
-            server.sendmail(sender_email, receiver_email, message)
+            server.sendmail(
+                sender_email, receiver_email, message.as_string()
+            )
         return render(request, 'responseRecorded.html')
