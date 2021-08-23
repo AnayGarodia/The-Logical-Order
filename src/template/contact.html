@@ -24,9 +24,10 @@
     <header>
         {% include "nav.html" %}
     </header>
+    <h1 class="catchphrase">Contact Us</h1>
+    <div class="short-line"></div>
     <section class="contact">
         <form class="form" method="POST" action="sendFeedback">{% csrf_token %}
-            <h3>Contact Us</h3>
             <label for="email">Email</label>
             <input placeholder="example@gmail.com" type="email" name="email">
             <label for="name">Name</label>

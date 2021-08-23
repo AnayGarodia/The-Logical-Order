@@ -150,6 +150,13 @@ nav main {
     opacity: 1;
 }
 
+.short-line {
+    height: 3px;
+    width: 50px;
+    margin: 0 auto;
+    background-color: #00d4ff;
+}
+
 @media (max-width: 1250px) {
     .nav-link:nth-of-type(4):hover~.hover {
         transform: translateX(-145%) translateY(15%) scale(1.75, 1.1);

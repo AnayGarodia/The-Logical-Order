@@ -5,6 +5,28 @@
     overflow-x: none;
 }
 
+.catchphrase {
+    text-align: center;
+    margin-top: 10%;
+    font-family: "Poppins";
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+@media (max-width: 1040px) {
+    .catchphrase {
+        font-size: 55px;
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .catchphrase {
+        margin-top: 20%;
+    }
+}
+
 .hover {
     transform: translateX(-160%) translateY(15%) scale(1.2, 1.1) !important;
     border-radius: 18px;
