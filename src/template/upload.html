@@ -24,7 +24,6 @@
 <body>
     <header>
         {% include "nav.html" %}
-
         <h1 class="catchphrase">Upload</h1>
         <div class="short-line"></div>
         <p class="catchphrase-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda alias vero animi corrupti illum, libero sit excepturi aperiam commodi dignissimos.</p>
@@ -38,8 +37,12 @@
                 <header>Drag and Drop to Upload File</header>
             </div>
             <span>OR</span>
-            <label for="file">Select File</label>
-            <input type="file" name="file" id="file">
+            <form action="post" method="POST" enctype="multipart/form-data"> {% csrf_token %} 
+                <label for="file">Select File</label>
+                <input type="file" name="image" id="file">
+                <input type="file" name="data" id="file" hidden>
+                <input type="text" value = "" name="uploadedFile"  id="uploadedFile">
+            </form>
 
         </div>
         </nav>
