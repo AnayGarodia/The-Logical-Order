@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" type="text/css" href="../static/css/upload.css">
     <link rel="stylesheet" type="text/css" href="../static/css/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +31,15 @@
 
 
         <div id="dropContainer">
-            <span>Drop file here or click to upload.</span>
-            <input type="file" name="file" id="drop-input" class="input">
-        </div>
+            <div class="icon">
+                <div class="fas fa-cloud-upload-alt"></div>
+            </div>
+            <div>
+                <header>Drag and Drop to Upload File</header>
+            </div>
+            <span>OR</span>
+            <label for="file">Select File</label>
+            <input type="file" name="file" id="file">
 
         </div>
         </nav>
