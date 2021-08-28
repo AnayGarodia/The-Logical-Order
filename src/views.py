@@ -24,7 +24,7 @@ def upload(request):
 
 
 def about(request):
-    return render(request, '/Users/deveshkedia/Desktop/Projects/AIIJC/The-Logical-Order/src/template/about.html')
+    return render(request, 'about.html')
 
 
 def index(request):

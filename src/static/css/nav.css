@@ -22,7 +22,7 @@ nav main {
 .navbar-nav {
     display: flex;
     justify-content: space-between;
-    margin-left: 18%;
+    margin-left: 28%;
     width: 50%;
 }
 
