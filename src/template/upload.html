@@ -26,8 +26,7 @@
         {% include "nav.html" %}
         <h1 class="catchphrase">Upload</h1>
         <div class="short-line"></div>
-        <p class="catchphrase-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda alias vero animi corrupti illum, libero sit excepturi aperiam commodi dignissimos.</p>
-
+        <p class="catchphrase-text">Upload a svg, jpg, or jpeg image file of a traffic sign so that our algorithm can find out which sign it is.</p>
 
         <div id="dropContainer">
             <div class="icon">
@@ -37,12 +36,13 @@
                 <header>Drag and Drop to Upload File</header>
             </div>
             <span>OR</span>
-            <form action="post" method="POST" enctype="multipart/form-data"> {% csrf_token %} 
+            <form action="post" method="POST" enctype="multipart/form-data"> {% csrf_token %}
                 <label for="file">sSelect File</label>
                 <input type="file" name="image" id="file">
-                <input type="text" value ="" name="data" id="data" hidden>
-                <input type="text" value = "" name="uploadedFile"  id="uploadedFile">
+                <input type="text" value="" name="data" id="data" hidden>
+                <input type="text" value="" name="uploadedFile" id="uploadedFile">
             </form>
+            <p class="error text-center text-danger">Please choose a svg, jpg, or a jpeg file.</p>
 
         </div>
         </nav>

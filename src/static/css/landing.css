@@ -165,7 +165,8 @@ nav main {
 }
 
 .image {
-    background-color: rgb(199, 12, 12);
+    padding: 20px;
+    background-color: rgb(255, 0, 85);
     border-bottom-right-radius: 16px;
     border-top-right-radius: 16px;
 }
@@ -268,7 +269,7 @@ a.btn {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .box {
         flex-direction: column;
         width: 75%;
