@@ -7,7 +7,8 @@ nav main {
 }
 
 .navbar-brand {
-    letter-spacing: 1.5px;
+    margin-left: 25px;
+    letter-spacing: 3.5px;
     font-size: 50px;
     color: #ffffff !important;
     font-weight: bold;
@@ -37,7 +38,7 @@ nav main {
     z-index: -1;
     height: 30px;
     width: 15%;
-    transform: translateX(-580%) translateY(15%);
+    transform: translateX(-585%) translateY(15%);
     border-radius: 16px;
     background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
     transition: 0.5s ease-in-out;

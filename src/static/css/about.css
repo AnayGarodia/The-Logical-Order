@@ -4,7 +4,7 @@
 }
 
 .nav-link:nth-of-type(1):hover~.hover {
-    transform: translateX(-580%) translateY(15%) !important;
+    transform: translateX(-585%) translateY(15%) !important;
     border-radius: 16px;
 }
 

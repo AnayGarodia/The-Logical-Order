@@ -183,7 +183,7 @@ nav main {
     font: 14px "Poppins";
 }
 
-.image:nth-of-type(1) {
+.left {
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
     border-bottom-right-radius: 0px;
@@ -324,4 +324,9 @@ a.btn {
     .end-section {
         margin-top: 12.5%;
     }
+}
+
+.wave {
+    margin-top: none;
+    width: 100% !important;
 }
