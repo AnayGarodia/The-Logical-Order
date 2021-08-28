@@ -7,10 +7,10 @@ from src import views
 
 urlpatterns = [
     path("", views.index),
+    path("post", views.post),
     path('contact', views.contact),
     path('about', views.about),
-    path('upload', views.upload_file),
-    path('sendFeedback',views.sendFeedback)
+    path('sendFeedback', views.sendFeedback)
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
