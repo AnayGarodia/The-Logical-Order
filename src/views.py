@@ -23,40 +23,8 @@ def upload(request):
     return render(request, 'upload.html')
 
 
-def upload_file(request):
-    if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
-        name = request.POST['name']
-        age = request.POST['age']
-        if form.is_valid():
-            files = form.cleaned_data['file']
-            fi = request.FILES['file'].name
-            today = date.today()
-            fileND = fi.split('.', 1)
-            imageFile = Files(image=files, name=name,
-                              age=age, filename=f"{fileND[0]}.png", date=today.strftime("%Y-%m-%d"), user=request.user, gender=request.POST['gender'])
-            imageFile.save()
-        filename = f"/Users/deveshkedia/Desktop/Projects/Relativity/Relativity/MEDIABIN/media/{fi}"
-        filenamesabc = f'{fi}.png'
-        fileND = filenamesabc.split('.', 1)
-        model = tf.keras.models.load_model(
-            "/Users/deveshkedia/Desktop/Projects/Relativity/Relativity/src/Model")
-        print(filename)
-        predictions = model.predict(filename)
-        print(np.where(predictions[0] == max(predictions[0])))
-        result = np.where(predictions[0] == max(predictions[0]))
-        report = result[0][0]
-        fileND = filenamesabc.split('.', 1)
-        os.remove(
-            f"/Users/deveshkedia/Desktop/Projects/Relativity/Relativity/MEDIABIN/media/{fi}")
-        return render(request, "scan.html", {"model": answer, 'file': fileND[0]})
-    else:
-        form = UploadFileForm()
-    return render(request, 'upload.html', {'form': form})
-
-
 def about(request):
-    return render(request, 'about.html')
+    return render(request, '/Users/deveshkedia/Desktop/Projects/AIIJC/The-Logical-Order/src/template/about.html')
 
 
 def index(request):
@@ -121,6 +89,7 @@ def post(request):
             print("ISALID")
             files = form.cleaned_data['image']
             fi = request.FILES['image'].name
+            print(fi)
             today = date.today()
             fileND = fi.split('.', 1)
             imageFile = Files(image=files,
@@ -147,13 +116,11 @@ def post(request):
         raw_data = request.POST['uploadedFile']
         img_data = raw_data.split(',', 1)
         # print(img_data[1])
-        # or, more concisely using with statement
         import base64
         imgdata = base64.b64decode(img_data[1])
-        fi = img_data[0]
+        fi = f"/Users/deveshkedia/Desktop/Projects/AIIJC/The-Logical-Order/MEDIABIN/media/{request.POST['data']}"
         with open(fi, 'wb') as f:
-            f.write(
-                "/Users/deveshkedia/Desktop/Projects/AIIJC/WEB/The-Logical-Order/MEDIABIN/media/", imgdata)
+            f.write(imgdata)
         filename = f"/Users/deveshkedia/Desktop/Projects/Relativity/Relativity/MEDIABIN/media/{fi}"
         filenamesabc = fi
         fileND = filenamesabc.split('.', 1)

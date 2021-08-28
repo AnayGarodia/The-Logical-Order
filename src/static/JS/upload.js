@@ -25,7 +25,7 @@ dropArea.addEventListener("drop", (event) => {
       input.value = fileURL;
       fileData = dataURLtoFile(fileURL, file);
       data.value = file.name;
-      // form[0].submit();
+      form[0].submit();
       console.log(input.value);
     };
     fileReader.readAsDataURL(file);
