@@ -17,3 +17,6 @@ python-slugify==6.1.2
 sqlparse==0.4.2
 urllib3==1.26.9
 virtualenv==20.14.1
+numpy
+tensorflow
+keras 

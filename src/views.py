@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import UploadFileForm
 from django.shortcuts import render
-# import tensorflow as tf
-# import kerass
+import tensorflow as tf
+import keras
 import smtplib
 import ssl
 import base64
