@@ -1,20 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="../static/css/nav.css">
 
 <head>
     <link rel="stylesheet" type="text/css" href="../static/css/landing.css">
-    <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +43,8 @@
     <section>
         <h1 class="catchphrase">The Future is Here</h1>
         <div class="short-line"></div>
-        <p class="catchphrase-text">Presenting advanced geoservices technology fueled by artificial intelligence. Ready to steer the world towards a better future!</p>
+        <p class="catchphrase-text">Presenting advanced geoservices technology fueled by artificial intelligence. Ready
+            to steer the world towards a better future!</p>
         <a href="upload.html">
             <button class="rounded-pill btn btn-light introductory-btn shadow-lg" id="introductory-btn">
                 <a class="btn" href="/upload">UPLOAD</a>
@@ -47,7 +53,8 @@
             </button>
         </a>
         <div class="imgs">
-            <img class="ai-img" src="../static/IMAGES/AI-img.svg" alt="Stylized image depicting artificial intelligence">
+            <img class="ai-img" src="../static/IMAGES/AI-img.svg"
+                alt="Stylized image depicting artificial intelligence">
             <img class="car-img" src="../static/IMAGES/car.svg" alt="Stylized image depicting a car">
         </div>
     </section>
@@ -58,26 +65,35 @@
             <div class="box">
                 <div class="text half order-last order-md-first">
                     <h3 class="box-title">What Is Vision?</h3>
-                    <p class="box-desc">It is an Artificial Intelligence Model created by the Logical Order which aims to identify common traffic signs, especially Russian ones. It can prove to be very useful in techologies such autonomous and semi-autonomous cars and even
+                    <p class="box-desc">It is an Artificial Intelligence Model created by the Logical Order which aims
+                        to identify common traffic signs, especially Russian ones. It can prove to be very useful in
+                        techologies such autonomous and semi-autonomous cars and even
                         traffic cameras.</p>
                 </div>
-                <img class="image half" src="../static/IMAGES/jam.svg" alt=""></div>
+                <img class="image half" src="../static/IMAGES/jam.svg" alt="">
+            </div>
             <div class="box">
                 <img class="image half left" src="../static/IMAGES/traffic.svg" alt="">
                 <div class="text half order-last">
                     <h3 class="box-title">Aim</h3>
-                    <p class="box-desc">Throughout the world, self driving cars are gaining more and more importance and are being seen as a viable techology for the future. As driving accidents are a major cause for deaths, the development of self-driving cars will be crucial
-                        in saving countless lives. But in order to do so, they need to ensure that they can correctly recognize traffic signs and thus, we made this software to aid them in this crucial goal.</p>
+                    <p class="box-desc">Throughout the world, self driving cars are gaining more and more importance and
+                        are being seen as a viable techology for the future. As driving accidents are a major cause for
+                        deaths, the development of self-driving cars will be crucial
+                        in saving countless lives. But in order to do so, they need to ensure that they can correctly
+                        recognize traffic signs and thus, we made this software to aid them in this crucial goal.</p>
                 </div>
             </div>
 
             <div class="box">
                 <div class="text half order-last order-md-first">
                     <h3 class="box-title">Who We Are</h3>
-                    <p class="box-desc">The Logical Order is a team of three hard working and dedicated developers. We have created 'Vision' with the vision that it will make people's lives easier and accelerate the development of latest technology such as autonomous cars.
+                    <p class="box-desc">The Logical Order is a team of three hard working and dedicated developers. We
+                        have created 'Vision' with the vision that it will make people's lives easier and accelerate the
+                        development of latest technology such as autonomous cars.
                         This will make people's lives easier and simpler and also help save countless lies.</p>
                 </div>
-                <img class="image half" src="../static/IMAGES/who-we-are.svg" alt=""></div>
+                <img class="image half" src="../static/IMAGES/who-we-are.svg" alt="">
+            </div>
 
         </div>
     </section>
@@ -86,7 +102,8 @@
     <section class="end-section">
         <img src="../static/IMAGES/stars.svg" alt="" class="star-img">
         <h2 class="end-tag">Try the Future of Technology!</h2>;
-        <button id="second-btn" class="rounded-pill btn btn-light introductory-btn shadow-lg" style="margin-bottom: 100px" id="introductory-btn" onclick="window.location.href='/upload'">
+        <button id="second-btn" class="rounded-pill btn btn-light introductory-btn shadow-lg"
+            style="margin-bottom: 100px" id="introductory-btn" onclick="window.location.href='/upload'">
             <a class="btn" href="/upload">UPLOAD</a>
             <img src="../static/IMAGES/arrow.svg" class="Arrow">
             <img src="../static/IMAGES/arrowHover.svg" class="Arrow-Hover">
@@ -96,10 +113,13 @@
 
     </section> {% include "footer1.html" %}
     <div class="scripts ">
-        <script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js "
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
         <script src="../static/JS/nav.js "></script>
         <script src="../static/JS/landing.js "></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js "
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj "
+            crossorigin="anonymous "></script>
     </div>
 </body>
 
