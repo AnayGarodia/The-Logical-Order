@@ -1,1 +1,1 @@
-web: gunicorn 'Relativity.wsgi'
+web: gunicorn Relativity.wsgi --log-file -
