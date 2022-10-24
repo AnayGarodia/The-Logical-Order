@@ -1,0 +1,160 @@
+.hover {
+    transform: translateX(-315%) translateY(15%) !important;
+    border-radius: 18px;
+}
+
+.nav-link:nth-of-type(1):hover~.hover {
+    transform: translateX(-585%) translateY(15%) !important;
+    border-radius: 16px;
+}
+
+.nav-link:nth-of-type(2):hover~.hover {
+    transform: translateX(-455%) translateY(15%) !important;
+}
+
+.nav-link:nth-of-type(4):hover~.hover {
+    transform: translateX(-160%) translateY(15%) scale(1.2, 1.1) !important;
+    border-radius: 18px;
+}
+
+.catchphrase {
+    text-align: center;
+    margin-top: 10%;
+    font-family: "Poppins";
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.catchphrase-text {
+    font: 500 22px "Atkinson Hyperlegible";
+    margin: 2% 20%;
+    text-align: center;
+}
+
+@media (max-width: 1040px) {
+    .catchphrase {
+        font-size: 55px;
+        margin-top: 15%;
+    }
+    .catchphrase-text {
+        margin: 2% 15%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .catchphrase {
+        margin-top: 20%;
+    }
+    .catchphrase-text {
+        margin: 2% 6%;
+        font-size: 18px;
+    }
+    .about {
+        font-family: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .catchphrase {
+        margin-top: 20%;
+        margin-left: none;
+        margin-right: none;
+    }
+    .catchphrase-text {
+        margin: 2% 6%;
+        font-size: 18px;
+        margin-left: none;
+        margin-right: none;
+    }
+}
+
+.box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 25px auto;
+    padding: 50px auto;
+    background-color: black;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+img {
+    height: 200px !important;
+    width: 220px !important;
+    margin: 35px auto;
+    border-radius: 20px;
+}
+
+.name {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Atkinson Hyperlegible';
+}
+
+.about {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin: 0 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-box {
+    color: white;
+    display: block;
+    margin: auto;
+    padding: 2.5%;
+    border-radius: 0.75em;
+    background-color: #000;
+    height: 375px;
+    width: 450px;
+    transition: 0.5s;
+}
+
+.box-2 {
+    background-color: white;
+    height: 375px;
+    width: 500px;
+}
+
+.box-2:nth-of-type(2),
+.box-2:nth-of-type(4),
+.box-2:nth-of-type(6) {
+    margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+    .content-box {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content-box {
+        width: 325px;
+        height: 270px;
+        padding: 3.5%;
+    }
+    .box-2 {
+        margin-top: 0px !important;
+    }
+    .about {
+        margin-left: none;
+        margin-right: none;
+        font-family: 12px;
+    }
+}

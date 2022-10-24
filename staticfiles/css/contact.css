@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+.catchphrase {
+    text-align: center;
+    margin-top: 10%;
+    font-family: "Poppins";
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+@media (max-width: 1040px) {
+    .catchphrase {
+        font-size: 55px;
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .catchphrase {
+        margin-top: 20%;
+    }
+}
+
+.hover {
+    transform: translateX(-160%) translateY(15%) scale(1.2, 1.1) !important;
+    border-radius: 18px;
+}
+
+.nav-link:nth-of-type(1):hover~.hover {
+    transform: translateX(-585%) translateY(15%) !important;
+    border-radius: 16px;
+}
+
+.nav-link:nth-of-type(2):hover~.hover {
+    transform: translateX(-455%) translateY(15%) !important;
+}
+
+.nav-link:nth-of-type(3):hover~.hover {
+    transform: translateX(-315%) translateY(15%) !important;
+    border-radius: 18px;
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 20px;
+}
+
+.form button {
+    /* background-color: black; */
+    background: linear-gradient(to right, #8e2de2 0%, #4a00e0 100%);
+    align-self: center;
+    border: none;
+    border-radius: 24px;
+    margin-top: 15px;
+}
+
+.contact {
+    width: 80%;
+    max-width: 950px;
+    background: black;
+    margin: 65px auto;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+form h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+}
+
+label {
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    .contact {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+
+@media (max-width: 750px) {
+    .form {
+        margin-top: 35px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    .form {
+        margin-top: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 525px) {
+    .form {
+        margin-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .contact {
+        margin-top: 50px;
+    }
+    form h3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .form {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .contact {
+        margin-top: 50px;
+    }
+    form h3 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .nav-link:nth-of-type(4):hover~.hover {
+        transform: translateX(-145%) translateY(15%) scale(1.75, 1.1);
+    }
+}

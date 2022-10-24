@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav main {
+    z-index: 200;
+    opacity: 0;
+    animation: fade 0.25s 3.25s;
+    animation-fill-mode: forwards;
+}
+
+::selection {
+    background-color: #444;
+    color: white;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.intro-text {
+    color: white;
+}
+
+.intro-text-span {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    color: white;
+}
+
+.intro-text-span.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.intro-text-span.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.catchphrase {
+    text-align: center;
+    margin-top: 10%;
+    font-family: "Poppins";
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.catchphrase-text {
+    font: 500 22px "Atkinson Hyperlegible";
+    margin: 2% 20%;
+    text-align: center;
+}
+
+.introductory-btn {
+    font-family: "Montserrat";
+    padding: 1em 2em !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+    color: white !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: none !important;
+    outline: none !important;
+    transition: 0.4s !important;
+    background: #444 !important;
+    margin-top: 30px !important;
+}
+
+.introductory-btn:hover {
+    background: #000 !important;
+}
+
+.introductory-btn:focus {
+    box-shadow: none;
+}
+
+.introductory-btn:hover .Arrow {
+    display: none;
+}
+
+.introductory-btn:hover .Arrow-Hover {
+    display: inline;
+}
+
+.Arrow-Hover {
+    display: none;
+    animation: move 0.15s ease-in-out forwards;
+    margin-left: -4.5%;
+}
+
+.Arrow {
+    margin-left: -4.5%;
+}
+
+.imgs {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ai-img {
+    justify-content: center;
+    display: flex;
+    height: 250px;
+    width: 500px;
+}
+
+.car-img {
+    justify-content: center;
+    display: flex;
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: 500px;
+    padding-bottom: 50px;
+}
+
+.boxes {
+    background-color: black;
+    padding: 5% 0;
+}
+
+.box {
+    width: 75%;
+    height: 425px;
+    border-radius: 16px !important;
+    background-color: white;
+    margin: 5% auto;
+    display: flex;
+}
+
+.half {
+    width: 50%;
+}
+
+.image {
+    padding: 20px;
+    background-color: rgb(255, 0, 85);
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.text {
+    padding: 5% 4%;
+}
+
+.box-title {
+    font: 16px 700 "Montserrat";
+    text-align: center;
+}
+
+.box-desc {
+    font: 14px "Poppins";
+}
+
+.left {
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+.footer-name {
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+
+.end-section {
+    margin-top: -10%;
+}
+
+.end-tag {
+    text-align: center;
+}
+
+.star-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-btn {
+    margin-bottom: 5%;
+}
+
+.red {
+    display: inline !important;
+    color: red !important;
+    text-decoration: underline;
+    display: inline !important;
+    color: red;
+}
+
+a.btn {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+@media (max-width: 1200px) {
+    .box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .box {
+        width: 85%;
+    }
+    .catchphrase {
+        font-size: 55px;
+        margin-top: 15%;
+    }
+    .catchphrase-text {
+        margin: 2% 15%;
+        font-size: 18px;
+    }
+    .car-img {
+        display: none !important;
+    }
+    .ai-img {
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    .box {
+        width: 92.5%;
+    }
+    .end-section {
+        margin-top: -5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .box {
+        flex-direction: column;
+        width: 75%;
+        height: 625px;
+    }
+    .half {
+        width: 100%;
+        height: 50%;
+    }
+    .image {
+        border-top-right-radius: 16px !important;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0 !important;
+        border-top-left-radius: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 80%;
+    }
+    .star-img {
+        display: none;
+    }
+    .end-tag {
+        margin-top: 5%;
+    }
+    .catchphrase {
+        margin-top: 20%;
+    }
+    .catchphrase-text {
+        margin: 2% 6%;
+        font-size: 18px;
+    }
+    .end-section {
+        margin-top: 2.5%;
+    }
+}
+
+@media (max-width: 470px) {
+    .ai-img {
+        height: 150px;
+        width: 250px;
+    }
+    .box {
+        width: 100%;
+        height: 550px;
+        margin-bottom: 50px;
+    }
+    .footer {
+        margin: 5%;
+    }
+    .end-section {
+        margin-top: 12.5%;
+    }
+}
+
+.wave {
+    margin-top: none;
+    width: 100% !important;
+}

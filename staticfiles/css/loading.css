@@ -1,0 +1,23 @@
+.loading {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 40px solid #ddd;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: 2s turn infinite ease-in-out;
+}
+
+@keyframes turn {
+    to {
+        transform: rotate(1turn);
+    }
+}
